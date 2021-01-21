@@ -1,0 +1,42 @@
+.wraper-p {
+	float: left;
+	width: 500px;
+}
+.wraper-image {
+	float: right;
+	width: 600px;
+}
+.clear {
+	clear: both;
+}
+
+/*Pseudo elements*/
+.test::before {
+	content: 'Hello Wordl';
+	color: red;
+	background: yellow;
+}
+/*.test::after {
+	content: url('../img/smiley.gif');
+}*/
+.test::after {
+	content: ' ';
+	width: 2px;
+	height: 30px;
+	background-color: blue;
+	display: inline-block;
+	margin-left: 30px;
+}
+/*.test::before {
+	content: ' ';
+	width: 30px;
+	height: 3px;
+	background-color: red;
+	margin-left:50px;
+	display: inline-block;
+}*/
+.wraper::after {
+	content: ' ';
+	clear: both;
+	display: block;
+}
